@@ -30,7 +30,7 @@
             <div class="form-group">
               <h3>Size:</h3>
               <div class="radio">
-                <label><input type="radio" name="size" value="10" checked>Large Pizza</label>
+                <label><input type="radio" name="size" value="10">Large Pizza</label>
               </div>
               <div class="radio">
                 <label><input type="radio" name="size" value="6">Small Pizza</label>
@@ -42,19 +42,19 @@
               <p>Cheese topping is free of charge, <br> all other toppings add $1 each.</p>
               <div class="row">
                 <div class="col-sm-3">
-                  <input type="checkbox" name="topping" value="0"> Cheese<br>
-                  <input type="checkbox" name="topping" value="1"> Olives <br>
-                  <input type="checkbox" name="topping" value="1"> Artichoke<br>
+                  <input type="checkbox" id="check" name="topping" value="0"> Cheese<br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Olives <br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Artichoke<br>
                 </div>
                 <div class="col-sm-4">
-                  <input type="checkbox" name="topping" value="1"> Tomatoes <br>
-                  <input type="checkbox" name="topping" value="1"> Basil <br>
-                  <input type="checkbox" name="topping" value="1"> Turkey Bacon <br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Tomatoes <br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Basil <br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Turkey Bacon <br>
                 </div>
                 <div class="col-sm-5">
-                  <input type="checkbox" name="topping" value="1"> Fresh Mozzarella<br>
-                  <input type="checkbox" name="topping" value="1"> Mushrooms <br>
-                  <input type="checkbox" name="topping" value="1"> Bell Peppers<br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Fresh Mozzarella<br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Mushrooms <br>
+                  <input type="checkbox" id="check" name="topping" value="1"> Bell Peppers<br>
                 </div>
               </div>
             </div>
@@ -62,7 +62,7 @@
             <div class="form-group">
               <h3>Side:</h3>
               <div class="radio">
-                <label><input type="radio" name="side" value="4" checked>Bread Sticks</label>
+                <label><input type="radio" name="side" value="4">Bread Sticks</label>
               </div>
               <div class="radio">
                 <label><input type="radio" name="side" value="4">Side Salad</label>
@@ -71,15 +71,18 @@
                 <label><input type="radio" name="side" value="2">Family Soda ($2)</label>
               </div>
               <div class="radio">
-                <label><input type="radio" name="side" value="0">None</label>
+                <label><input type="radio" name="side" value="0" checked>None</label>
               </div>
             </div>
+            <span class="btn btn-primary" id="add-pizza">Another Pizza</span>
             <button type="submit" class="btn btn-danger">Checkout</button>
           </form>
         </div>
         <div class="col-md-5 receipt">
           <h2>Your <span id="pizzaStyle"></span> Pizza Order:</h2>
           <h4>You're total is: $<span id="cost"></span></h4>
+          <ul id="morePizza">
+          </ul>
         </div>
       </div>
     </div>
