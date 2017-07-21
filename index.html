@@ -11,7 +11,7 @@
   <body>
     <div class="container-fluid">
       <div class="jumbotron">
-        <h1>Portland's Pizza</h1>
+        <h1><strong>Portland's Pizza</strong></h1>
       </div>
       <div class="row">
         <div class="col-md-5 pizzaCol">
@@ -21,9 +21,9 @@
             <div class="form-group">
               <h3>Pizza Sauce:</h3>
               <select class="form-control" id="pizza">
-                <option value="marinara">Marinara</option>
+                <option value="Marinara">Marinara</option>
                 <option value="BBQ">BBQ</option>
-                <option value="alfredo">Alfredo</option>
+                <option value="Alfredo">Alfredo</option>
               </select>
             </div>
             <!-- Select pizza size -->
@@ -39,12 +39,21 @@
             <!-- Select pizza topping -->
             <div class="form-group">
               <h3>Toppings:</h3>
-              <div class="radio">
-                <label><input type="radio" name="topping" value="2" checked>One Topping</label>
+              <p>Cheese topping is free of charge, <br> all other toppings add $1 each.</p>
+              <div class="row">
+                <div class="col-sm-3">
+                  <input type="checkbox" name="topping" value="0"> Cheese<br>
+                  <input type="checkbox" name="topping" value="1"> Olives <br>
+                  <input type="checkbox" name="topping" value="1"> Artichoke<br>
+                </div>
+                <div class="col-sm-5">
+                  <input type="checkbox" name="topping" value="1"> Tomatoes <br>
+                  <input type="checkbox" name="topping" value="1"> Basil <br>
+                  <input type="checkbox" name="topping" value="1"> Turkey Bacon <br>
+                </div>
               </div>
-              <div class="radio">
-                <label><input type="radio" name="topping" value="3">Two Topping</label>
-              </div>
+
+
             </div>
             <!-- Select pizza side -->
             <div class="form-group">
@@ -55,9 +64,16 @@
               <div class="radio">
                 <label><input type="radio" name="side" value="4">Side Salad</label>
               </div>
+              <div class="radio">
+                <label><input type="radio" name="side" value="0">None</label>
+              </div>
             </div>
-
+            <button type="submit" class="btn btn-danger">Checkout</button>
           </form>
+        </div>
+        <div class="col-md-5 receipt">
+          <h2>Your <span id="pizzaStyle"></span> Pizza Order:</h2>
+          <h4>You're total is: $<span id="cost"></span></h4>
         </div>
       </div>
     </div>
