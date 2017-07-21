@@ -1,6 +1,6 @@
 # _Order Pizza Site_
 
-#### _This site will take a pizza order for a user and display the user's total cost, {07.21.2017}_
+#### _This site will take a pizza order for a user and display the user's total cost {07.21.2017}_
 
 #### By _**Haneen Abu-Khater**_
 

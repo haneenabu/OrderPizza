@@ -6,12 +6,59 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title>Order Pizza</title>
+    <title>Portland Pizza</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="jumbotron">
-        <h1>Order Pizza</h1>
+        <h1>Portland's Pizza</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-5 pizzaCol">
+          <h1>Order Pizza</h1>
+          <form id="pizzaForm">
+            <!-- Select pizza sauce -->
+            <div class="form-group">
+              <h3>Pizza Sauce:</h3>
+              <select class="form-control" id="pizza">
+                <option value="marinara">Marinara</option>
+                <option value="BBQ">BBQ</option>
+                <option value="alfredo">Alfredo</option>
+              </select>
+            </div>
+            <!-- Select pizza size -->
+            <div class="form-group">
+              <h3>Size:</h3>
+              <div class="radio">
+                <label><input type="radio" name="size" value="10" checked>Large Pizza</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="size" value="6">Small Pizza</label>
+              </div>
+            </div>
+            <!-- Select pizza topping -->
+            <div class="form-group">
+              <h3>Toppings:</h3>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="2" checked>One Topping</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="topping" value="3">Two Topping</label>
+              </div>
+            </div>
+            <!-- Select pizza side -->
+            <div class="form-group">
+              <h3>Side:</h3>
+              <div class="radio">
+                <label><input type="radio" name="side" value="4" checked>Bread Sticks</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="side" value="4">Side Salad</label>
+              </div>
+            </div>
+
+          </form>
+        </div>
       </div>
     </div>
   </body>
