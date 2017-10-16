@@ -11,7 +11,15 @@ _This website will prompt the user for a pizza order selection. It will then ana
 
 #### Overview of Pizza WebPage
 
-![Alt text](/css/overview.png?raw=true "Overview image")
+![Alt text](/css/overview.png?raw=true "Overview Image")
+
+#### Order form prompted to the user with order options
+
+![Alt text](/css/options.png?raw=true "Options Image")
+
+#### Checkout of the Pizza Created 
+
+![Alt text](/css/checkout.png?raw=true "Checkout Image")
 
 ## Specs
 
