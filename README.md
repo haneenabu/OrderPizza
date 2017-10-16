@@ -4,9 +4,14 @@
 
 #### By _**Haneen Abu-Khater**_
 
-## Description
+Description
+-------------
 
 _This website will prompt the user for a pizza order selection. It will then analyze the user's input and compute the total cost of the pizza. The website will then display the resulting cost and order_
+
+#### Overview of Pizza WebPage
+
+![Alt text](/css/overview.png?raw=true "Overview image")
 
 ## Specs
 
